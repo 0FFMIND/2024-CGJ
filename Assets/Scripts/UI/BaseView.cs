@@ -5,6 +5,9 @@ public class BaseView : MonoBehaviour
 {
     // 视图的名称
     public string Name;
+
+    public GameObject DMenu;
+
     // 画布组件，用于UI渲染
     protected Canvas _canvas;   
     // 缓存物体的字典，键为字符串，值为GameObject

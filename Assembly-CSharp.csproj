@@ -82,6 +82,7 @@
     <Compile Include="Assets\Resources\External\TransitionBlocks\Scripts\TransitionSetup.cs" />
     <Compile Include="Assets\Scripts\SingletonLoader.cs" />
     <Compile Include="Assets\Resources\External\TransitionBlocks\Scripts\Transition Orders\TransitionEnumRandomizer.cs" />
+    <Compile Include="Assets\Scripts\TransManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Resources\External\TransitionBlocks\Readme.txt" />
@@ -311,6 +312,9 @@
     </Reference>
     <Reference Include="UnityEditor.UnityConnectModule">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.20f1c1\2020.3.20f1c1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Pathfinding.Ionic.Zip.Reduced">
+      <HintPath>Assets\Resources\External\AstarPathfindingProject\Plugins\DotNetZip\Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.20f1c1\2020.3.20f1c1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -755,6 +759,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="AstarPathfindingProjectEditor.csproj">
+      <Project>{97DD7652-3A90-F62A-F13E-3E4BABDEF0BB}</Project>
+      <Name>AstarPathfindingProjectEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="AstarPathfindingProject.csproj">
+      <Project>{44B8B054-092F-DF89-0317-979F71609938}</Project>
+      <Name>AstarPathfindingProject</Name>
+    </ProjectReference>
+    <ProjectReference Include="PackageToolsEditor.csproj">
+      <Project>{BDFDC63A-C49F-5DF0-39C8-23746B3FD92E}</Project>
+      <Name>PackageToolsEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="AllIn1SpriteShaderAssembly.csproj">
+      <Project>{A0122A23-8743-45EC-16FE-DFF73E7EA839}</Project>
+      <Name>AllIn1SpriteShaderAssembly</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
