@@ -4,6 +4,7 @@ public enum SoundEffect
 {
     Button_OnMouse,
     Botton_Click,
+    Gun_Fire,
 }
 
 public enum BGM

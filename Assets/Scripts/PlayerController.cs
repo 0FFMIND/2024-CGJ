@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 
@@ -7,13 +5,24 @@ public class PlayerController : MonoBehaviour
 {
     Vector3 direction;
 
-
+    public CameraShake cameraShake;
+    public CameraShake cameraShake1;
+    public CameraShake cameraShake2;
+    public CameraShake cameraShake3;
 
     public Transform gunTrans;
 
     public float projectileSpeed;
     
     public float fireCD;
+
+    [Header("相机晃动参数")]
+
+    public float duaration;
+
+    public float strength;
+
+    [Header("升级面板")]
 
     private float fireCounter;
 
@@ -23,7 +32,7 @@ public class PlayerController : MonoBehaviour
     {
         instance = this;
 
-        gunTrans = transform.Find("gun");
+        gunTrans = transform.Find("gunPos");
 
         fireCounter = fireCD;
     }
@@ -45,6 +54,14 @@ public class PlayerController : MonoBehaviour
 
     private void Fire()
     {
+        // 播放音效
+        AudioManager.Instance.PlaySFX(SoundEffect.Gun_Fire);
+        // 晃动屏幕，背景
+        cameraShake.StartShake(duaration,strength);
+        cameraShake1.StartShake(duaration, strength);
+        cameraShake2.StartShake(duaration, strength);
+        cameraShake3.StartShake(duaration, strength);
+        // 生成子弹预制体
         GameObject obj = ProjectilePool.Instance.GetProjectile();
         obj.transform.position = gunTrans.position;
         Vector3 dir = transform.TransformDirection(new Vector3(0,1,0));

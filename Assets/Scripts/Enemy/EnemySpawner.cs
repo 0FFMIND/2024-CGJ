@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
-    public GameObject enemyToSpawn;//怪物类型
+    public GameObject[] enemyToSpawns;//怪物类型
 
     public float timeToSpawn;//生成间隔
 
@@ -22,7 +22,6 @@ public class EnemySpawner : MonoBehaviour
 
         target = PlayerController.instance.transform;
 
-
     }
 
     private void Update()
@@ -31,7 +30,10 @@ public class EnemySpawner : MonoBehaviour
         if(spawnCounter < 0)
         {
             spawnCounter = timeToSpawn;
+            // 随机选择一个敌人类型
+            GameObject enemyToSpawn = enemyToSpawns[Random.Range(0, enemyToSpawns.Length)];
 
+            // 生成敌人
             Instantiate(enemyToSpawn, SelectSpawnPoint(), transform.rotation);
         }
     }

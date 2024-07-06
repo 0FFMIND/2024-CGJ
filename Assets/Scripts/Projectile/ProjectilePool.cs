@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class ProjectilePool : MonoBehaviour
 {
+    // 简单的单例写法，写了一个对象池
     public static ProjectilePool Instance { get; private set; }
 
     [SerializeField]
-    private GameObject projectilePrefab; // 投射物预制体
-    private Queue<GameObject> projectiles = new Queue<GameObject>();
+
+    private GameObject projectilePrefab; // 子弹预制体
+
+    private Queue<GameObject> projectiles = new Queue<GameObject>();  // 预制体队列
 
     private void Awake()
     {
