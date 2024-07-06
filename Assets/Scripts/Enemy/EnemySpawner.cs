@@ -21,7 +21,6 @@ public class EnemySpawner : MonoBehaviour
         spawnCounter = timeToSpawn;
 
         target = PlayerController.instance.transform;
-
     }
 
     private void Update()

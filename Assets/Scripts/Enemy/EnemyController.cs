@@ -5,10 +5,6 @@ using UnityEngine;
 public class EnemyController : BaseEnemy
 {
 
-    
-
-    
-    
     void Start()
     {
         
@@ -17,7 +13,7 @@ public class EnemyController : BaseEnemy
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(direction * Speed * Time.deltaTime);
+        transform.Translate(direction * moveSpeed * Time.deltaTime);
     }
 
    

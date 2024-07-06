@@ -413,6 +413,10 @@ PrefabInstance:
       propertyPath: DMenu
       value: 
       objectReference: {fileID: 1414424344}
+    - target: {fileID: 4713923474116241797, guid: 0d36fd454d6857346b439c274584876b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4915008755604748884, guid: 0d36fd454d6857346b439c274584876b, type: 3}
       propertyPath: m_Name
       value: StartView
@@ -619,23 +623,7 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
   m_EffectDistance: {x: 10, y: -10}
   m_UseGraphicAlpha: 1
---- !u!224 &1184473500 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 6267942627934054708, guid: 0d36fd454d6857346b439c274584876b, type: 3}
-  m_PrefabInstance: {fileID: 912611352}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1184473501 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3432558410044692752, guid: 0d36fd454d6857346b439c274584876b, type: 3}
-  m_PrefabInstance: {fileID: 912611352}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e6d86a7783f25e42b09891d0998a632, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!21 &1221710009
+--- !u!21 &1137620423
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
@@ -873,6 +861,22 @@ Material:
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
+--- !u!224 &1184473500 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 6267942627934054708, guid: 0d36fd454d6857346b439c274584876b, type: 3}
+  m_PrefabInstance: {fileID: 912611352}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1184473501 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3432558410044692752, guid: 0d36fd454d6857346b439c274584876b, type: 3}
+  m_PrefabInstance: {fileID: 912611352}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e6d86a7783f25e42b09891d0998a632, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1414424344 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4713923474116241797, guid: 0d36fd454d6857346b439c274584876b, type: 3}

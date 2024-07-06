@@ -9,7 +9,6 @@ public enum BulletStatus
 }
 public class Projectile : MonoBehaviour
 {
-    [SerializeField] private float damage = 1.0f;
     [SerializeField] private float lifetime = 5f;
     public Material RedMaterial;
     public Material GreenMaterial;
@@ -71,7 +70,14 @@ public class Projectile : MonoBehaviour
     {
         CancelInvoke();
     }
-
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "enemy")
+        {
+            collision.gameObject.GetComponent<EnemyController>().HandleDamage(GameManager.Instance.bulletDamage, status);
+            Deactivate();
+        }
+    }
     private void Deactivate()
     {
         if (trailRenderer != null)

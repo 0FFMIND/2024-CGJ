@@ -6,6 +6,8 @@ TagManager:
   tags:
   - GunPos
   - bullet
+  - enemy
+  - player
   layers:
   - Default
   - TransparentFX

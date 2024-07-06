@@ -28,6 +28,8 @@ public class PlayerController : MonoBehaviour
 
     public static PlayerController instance;
 
+    // Ö÷ËþÑªÁ¿
+
     void Awake()
     {
         instance = this;
