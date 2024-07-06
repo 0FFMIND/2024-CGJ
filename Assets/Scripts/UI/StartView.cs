@@ -6,6 +6,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+// ºÃ≥–÷¡BaseView
 public class StartView : BaseView
 {
     protected void Start()
@@ -19,6 +20,9 @@ public class StartView : BaseView
 
     private void onQuitBtn()
     {
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#endif
         Application.Quit();
     }
 
