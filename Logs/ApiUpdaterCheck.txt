@@ -8,3 +8,23 @@ C# parse time         : 824ms
 candidates check time : 24ms
 console write time    : 0ms
 
+[api-updater (non-obsolete-error-filter)] 2024/7/6 18:32:31 : Starting G:/SoftWare/Unity/2020.3.20f1c1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 1678.3313ms
+moved types parse time: 45ms
+candidates parse time : 1ms
+C# parse time         : 1018ms
+candidates check time : 34ms
+console write time    : 1ms
+
+[api-updater (non-obsolete-error-filter)] 2024/7/6 19:40:17 : Starting G:/SoftWare/Unity/2020.3.20f1c1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 171.1781ms
+moved types parse time: 37ms
+candidates parse time : 0ms
+C# parse time         : 161ms
+candidates check time : 21ms
+console write time    : 1ms
+

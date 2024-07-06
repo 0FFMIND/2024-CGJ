@@ -1,7 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AllIn1SpriteShaderAssembly", "AllIn1SpriteShaderAssembly.csproj", "{FB4FEC11-E861-FC38-0F39-97E483D67AD1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AstarPathfindingProject", "AstarPathfindingProject.csproj", "{63ED7861-F07F-4E22-F27E-828716D2F1C0}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{FDCC520C-14A2-E5D3-C878-67290886C365}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-firstpass", "Assembly-CSharp-firstpass.csproj", "{A96B3E65-166D-5CCF-832D-4D05E86044FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PackageToolsEditor", "PackageToolsEditor.csproj", "{C5D7ECAE-E2AF-0504-54E4-17A4311AC87D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AstarPathfindingProjectEditor", "AstarPathfindingProjectEditor.csproj", "{2624E0C9-FB3C-D535-7A4F-DACA76221365}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +19,30 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FB4FEC11-E861-FC38-0F39-97E483D67AD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB4FEC11-E861-FC38-0F39-97E483D67AD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB4FEC11-E861-FC38-0F39-97E483D67AD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB4FEC11-E861-FC38-0F39-97E483D67AD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63ED7861-F07F-4E22-F27E-828716D2F1C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63ED7861-F07F-4E22-F27E-828716D2F1C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63ED7861-F07F-4E22-F27E-828716D2F1C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63ED7861-F07F-4E22-F27E-828716D2F1C0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FDCC520C-14A2-E5D3-C878-67290886C365}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FDCC520C-14A2-E5D3-C878-67290886C365}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FDCC520C-14A2-E5D3-C878-67290886C365}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FDCC520C-14A2-E5D3-C878-67290886C365}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A96B3E65-166D-5CCF-832D-4D05E86044FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A96B3E65-166D-5CCF-832D-4D05E86044FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A96B3E65-166D-5CCF-832D-4D05E86044FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A96B3E65-166D-5CCF-832D-4D05E86044FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5D7ECAE-E2AF-0504-54E4-17A4311AC87D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5D7ECAE-E2AF-0504-54E4-17A4311AC87D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5D7ECAE-E2AF-0504-54E4-17A4311AC87D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5D7ECAE-E2AF-0504-54E4-17A4311AC87D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2624E0C9-FB3C-D535-7A4F-DACA76221365}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2624E0C9-FB3C-D535-7A4F-DACA76221365}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2624E0C9-FB3C-D535-7A4F-DACA76221365}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2624E0C9-FB3C-D535-7A4F-DACA76221365}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
